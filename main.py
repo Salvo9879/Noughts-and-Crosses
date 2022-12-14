@@ -2,6 +2,7 @@
 # Developed by Salvatore La Paglia
 # Copyright (c) 2022 Salvo9879
 # See license for more information
+
 # https://github.com/Salvo9879/Noughts-and-Crosses
 
 import random
