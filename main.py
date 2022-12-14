@@ -2,7 +2,6 @@
 # Developed by Salvatore La Paglia
 # Copyright (c) 2022 Salvo9879
 # See license for more information
-# https://github.com/Salvo9879/Naughts-and-Crosses
 # https://github.com/Salvo9879/Noughts-and-Crosses
 
 import random
@@ -353,9 +352,9 @@ class Board():
         print(f"{game.p2['name']} wins: {game.p2['wins']}\n")
 
         if game.p1['wins'] > game.p2['wins']:
-            print(f"{game.p1['name']} is in the lead!")
-        elif game.p1['wins'] > game.p2['wins']:
-            print(f"{game.p2['name']} is in the lead!")
+            print(f"{game.visuals.success}{game.p1['name']} is in the lead!{game.visuals.reset}")
+        elif game.p1['wins'] < game.p2['wins']:
+            print(f"{game.visuals.success}{game.p2['name']} is in the lead!{game.visuals.reset}")
         elif game.p1['wins'] == game.p2['wins']:
             print(f"{game.visuals.success}{game.p1['name']} and {game.p2['name']} are drawing!{game.visuals.reset}")
 
